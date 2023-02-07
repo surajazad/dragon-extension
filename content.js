@@ -41,10 +41,11 @@ chrome.runtime.sendMessage({ data: document.title }, function (response) {
     const query= buildSearchKey(searchQuery);
     if(query) {
      var iframe = document.createElement("iframe");
+     iframe.id = 'vsco-iframe';
     const sourceURL = 'https://voluble-kitsune-4003ac.netlify.app/?q='+query;
     iframe.setAttribute("src", sourceURL);
     iframe.setAttribute("loading", "lazy");
-    iframe.setAttribute("style", "border:solid; width:300px; height:250px; display: block; position: absolute;top: 150px;right: -30px;border-radius: 10px; transform: translate3d(0, -50%, 0);box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);z-index: 9999;");
+    iframe.setAttribute("style", "width:300px; height:100%; display:block; position:absolute; top:10px; right:20px; z-index:9999;");
     iframe.setAttribute("scrolling", "yes");
     iframe.setAttribute("frameborder", "0");
     document.body.appendChild(iframe);
