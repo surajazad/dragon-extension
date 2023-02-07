@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>VS&Co Genie</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="./style.scss">
 
-    </head>
-    <body>
-        
-        <div class="drawer-content">
-            <div class="main-container">
-                <header>VS&Co Genie</header>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VS&Co Genie</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="drawer-content">
+        <div class="main-container">
+            <header>
+                <img class="vs-logo" src="./images/vslogo.png" />
+                <div class="title">VS&Co Genie</div>
+            </header>
+            <div class="search-bar">
                 <label for="gsearch">Search Google:</label>
-                <input type="search" id="gsearch" name="gsearch">
-                <input type="submit">
-                <button>
-                    <a href="https://www.victoriassecret.com/us/checkout" target="_blank">Bag</a>
-                </button>
-                <button>
-                    <a href="https://www.victoriassecret.com/us/offercodes" target="_blank">Offers</a>
-                </button>
-                <button>
-                    <a href="https://www.victoriassecret.com/us/account/profile" target="_blank">Profile</a>
-                </button>
-                <button>
-                    <a href="https://www.victoriassecret.com/us/vs/gift-cards" target="_blank">Gift Cards</a>
-                </button>
-                <button>
-                    <a href="https://www.victoriassecret.com/us/account/profile#orders" target="_blank">Orders</a>
-                </button>
-                <div>See product matches from victoria's secret when browsing other e-commerce sites</div>
+                <input type="search" id="gsearch" name="gsearch" placeholder="Search here..">
+                <!-- onchange="enterKeyPressed()" -->
+            </div>
+            <div class="vs-short-links">
+                <div>
+                    <a href="https://www.victoriassecret.com/us/checkout" target="_blank"><img class="vs-link"
+                            src="./images/shopping-bag.png" /></a>
+                    <a href="https://www.victoriassecret.com/us/offercodes" target="_blank"><img class="vs-link"
+                            src="./images/offers.png" /></a>
+                    <a href="https://www.victoriassecret.com/us/account/profile" target="_blank"><img class="vs-link"
+                            src="./images/person.png" /></a>
+                </div>
+                <div>
+                    <a href="https://www.victoriassecret.com/us/vs/gift-cards" target="_blank"><img class="vs-link"
+                            src="./images/gift.png" /></a>
+                    <a href="https://www.victoriassecret.com/us/account/profile#orders" target="_blank"><img
+                            class="vs-link" src="./images/order.png" /></a>
+                    <a href="https://www.victoriassecret.com/us/checkout" target="_blank"><img class="vs-link"
+                            src="./images/wishlist.png" /></a>
+                </div>
+            </div>
+            <div class="disclaimer">See product matches from victoria's secret when browsing other e-commerce sites
+            </div>
+            <div class="sign-up-div">
+                <a class="sign-up" href="https://www.victoriassecret.com/us/subscriptions/signup/email"
+                    target="_blank">Sign Up & Receive 15% OFF</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/victoriassecret" target="_blank"><img
+                        src="./images/facebook.png" /></a>
+                <a href="https://twitter.com/victoriassecret" target="_blank"><img src="./images/twitter.png" /></a>
+                <a href="https://www.youtube.com/victoriassecret" target="_blank"><img src="./images/youtube.png" /></a>
+                <a href="https://www.pinterest.com/victoriassecret/" target="_blank"><img
+                        src="./images/pinterest.png" /></a>
+                <a href="https://www.instagram.com/victoriassecret/" target="_blank"><img
+                        src="./images/instagram.png" /></a>
             </div>
         </div>
-        <script src="" async defer></script>
-    </body>
+    </div>
+    <script type="module" src="./content.js" async defer></script>
+</body>
+
 </html>

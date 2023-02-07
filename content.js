@@ -79,6 +79,16 @@ function buildSearchKey(searchQuery) {
     return null;  
 }
 
+function enterKeyPressed(event) {
+    console.log("outside");
+    if (event.keyCode === 13) {
+        console.log("Enter key is pressed");
+        return true;
+    } else {
+        return false;
+    }
+}
+
 chrome.runtime.sendMessage({ data: document.title }, function (response) {
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());

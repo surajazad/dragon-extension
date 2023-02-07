@@ -1,0 +1,93 @@
+body {
+    width: 244px;
+    background-color: rgb(249, 226, 231);
+    border: 1px solid rgb(249, 226, 231);
+}
+
+img {
+    width: 35px;
+}
+
+.vs-logo {
+    width: 50px;
+    margin-right: 0;
+}
+
+.vs-link {
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+    background: white;
+}
+
+.vs-short-links {
+   text-align: center;
+    margin: 20px 0 16px;
+}
+
+.list-items {
+    display: flex;
+    justify-content: space-around;
+    margin: 12px 0;
+}
+
+.disclaimer {
+    margin: 30px 12px;
+    text-align: center;
+    font-style: italic;
+    font-size: 10px;
+    color: #221d1d;
+}
+
+.sign-up {
+    color: #221d1d;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 12px;
+    background: white;
+}
+
+.sign-up-div {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #221d1d;
+    text-decoration: none;
+}
+
+#gsearch {
+    padding: 7px;
+    border: white;
+}
+
+.title {
+    color: #221d1d;
+    font-weight: 400;
+    font-family: BentonSans,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid;
+}
+
+.search-bar {
+    padding: 12px 0;
+    color: #221d1d;
+}
