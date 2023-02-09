@@ -1,5 +1,3 @@
-console.log("Hi...VS&co Genie Content Script Loads");
-
 function buildSearchKey(searchQuery) {
     if(searchQuery.indexOf("red") !=-1 || searchQuery.indexOf("redbra") !=-1 ) {
         return "redbras";
@@ -79,16 +77,6 @@ function buildSearchKey(searchQuery) {
     return null;  
 }
 
-function enterKeyPressed(event) {
-    console.log("outside");
-    if (event.keyCode === 13) {
-        console.log("Enter key is pressed");
-        return true;
-    } else {
-        return false;
-    }
-}
-
 chrome.runtime.sendMessage({ data: document.title }, function (response) {
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
@@ -96,7 +84,7 @@ chrome.runtime.sendMessage({ data: document.title }, function (response) {
     const query= buildSearchKey(searchQuery);
     if(query) {
      var iframe = document.createElement("iframe");
-     iframe.id = 'vsco-iframe';
+     iframe.id = 'vs-iframe';
     const sourceURL = 'https://voluble-kitsune-4003ac.netlify.app/?q='+query;
     iframe.setAttribute("src", sourceURL);
     iframe.setAttribute("loading", "lazy");

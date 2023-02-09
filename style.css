@@ -13,6 +13,14 @@ img {
     margin-right: 0;
 }
 
+.vs-brand {
+    text-align: center;
+}
+
+.brand {
+    width: 45px;
+    }
+
 .vs-link {
     width: 35px;
     border: 1px solid white;
@@ -35,7 +43,7 @@ img {
 }
 
 .disclaimer {
-    margin: 30px 12px;
+    margin: 20px 12px;
     text-align: center;
     font-style: italic;
     font-size: 12px;
@@ -52,14 +60,14 @@ img {
 }
 
 .sign-up-div {
-    margin: 40px 0;
+    margin: 35px 0;
     text-align: center;
 }
 
 .social-links {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 a {
